@@ -3,8 +3,13 @@ import M from "materialize-css/dist/js/materialize.min.js";
 
 import SearchBar from "./components/layout/SearchBar";
 
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import Logs from "./components/logs/Logs";
+import AddButton from "./components/layout/AddButton";
+import AddLogModal from "./components/logs/AddLogModal";
+import EditLogModal from "./components/logs/EditLogModal";
+import AddTechModal from "./components/techs/AddTechModal";
+import TechListModal from "./components/techs/TechListModal";
 
 const App = () => {
    useEffect(() => {
@@ -12,10 +17,17 @@ const App = () => {
    }, []);
 
    return (
-      <div className="App">
+      <Fragment>
          <SearchBar />
-         <Logs />
-      </div>
+         <div className="container">
+            <AddButton />
+            <AddLogModal />
+            <EditLogModal />
+            <AddTechModal />
+            <TechListModal />
+            <Logs />
+         </div>
+      </Fragment>
    );
 };
 
