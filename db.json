@@ -6,30 +6,13 @@
       "attention": false,
       "tech": "Sara Wilson",
       "date": "2020-11-10T15:49:38.679Z"
-    },
-    {
-      "id": 4,
-      "message": "test System Log - complete",
-      "attention": false,
-      "tech": "Sara Wilson",
-      "date": "2020-11-10T15:49:51.531Z"
     }
   ],
   "techs": [
     {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
-    {
       "id": 2,
       "firstName": "park",
       "lastName": "chan"
-    },
-    {
-      "id": 3,
-      "firstName": "park",
-      "lastName": "Doe"
     }
   ]
 }
