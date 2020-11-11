@@ -13,31 +13,19 @@
       "tech": "park chan",
       "date": "2020-11-11T12:13:42.968Z",
       "id": 4
-    },
-    {
-      "message": "test react 1",
-      "attention": true,
-      "tech": "park chan",
-      "date": "2020-11-11T12:14:01.092Z",
-      "id": 5
     }
   ],
   "techs": [
     {
-      "id": 2,
-      "firstName": "park",
-      "lastName": "chan"
-    },
-    {
       "firstName": "chanyoung",
-      "lastName": "park",
-      "date": "2020-11-11T12:26:41.156Z",
+      "lastName": "312313",
+      "date": "2020-11-11T12:45:48.763Z",
       "id": 3
     },
     {
-      "firstName": "chanyoung2222",
-      "lastName": "es",
-      "date": "2020-11-11T12:26:53.581Z",
+      "firstName": "chanyoung",
+      "lastName": "2313",
+      "date": "2020-11-11T12:49:26.459Z",
       "id": 4
     }
   ]

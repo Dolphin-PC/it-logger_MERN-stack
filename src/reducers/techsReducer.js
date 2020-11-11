@@ -29,7 +29,7 @@ export default (state = initialState, action) => {
       case DELETE_TECH:
          return {
             ...state,
-            techs: state.techs.map((tech) => tech.id !== action.payload.id),
+            techs: state.techs.filter((tech) => tech.id !== action.payload),
             loading: false,
          };
       case TECHS_ERROR:
