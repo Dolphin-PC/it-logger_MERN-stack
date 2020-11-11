@@ -6,6 +6,20 @@
       "attention": false,
       "tech": "Sara Wilson",
       "date": "2020-11-10T15:49:38.679Z"
+    },
+    {
+      "message": "test System Log",
+      "attention": false,
+      "tech": "park chan",
+      "date": "2020-11-11T12:13:42.968Z",
+      "id": 4
+    },
+    {
+      "message": "test react 1",
+      "attention": true,
+      "tech": "park chan",
+      "date": "2020-11-11T12:14:01.092Z",
+      "id": 5
     }
   ],
   "techs": [
@@ -13,6 +27,18 @@
       "id": 2,
       "firstName": "park",
       "lastName": "chan"
+    },
+    {
+      "firstName": "chanyoung",
+      "lastName": "park",
+      "date": "2020-11-11T12:26:41.156Z",
+      "id": 3
+    },
+    {
+      "firstName": "chanyoung2222",
+      "lastName": "es",
+      "date": "2020-11-11T12:26:53.581Z",
+      "id": 4
     }
   ]
 }

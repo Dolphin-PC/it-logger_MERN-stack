@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { addLog } from "../../actions/logActions";
 
-const AddLogModal = ({ addLog }) => {
+const AddLogModal = ({ techs: { techs }, addLog }) => {
    const [message, setMessage] = useState("");
    const [attention, setAttention] = useState(false);
    const [tech, setTech] = useState("");
@@ -58,9 +58,17 @@ const AddLogModal = ({ addLog }) => {
                      <option value="" disabled>
                         Select Technician
                      </option>
-                     <option value="John Doe">John Doe</option>
-                     <option value="Sam Smith">Sam Smith</option>
-                     <option value="Sara Wilson">Sara Wilson</option>
+                     {techs !== null &&
+                        techs.map((tech) => {
+                           return (
+                              <option
+                                 value={`${tech.firstName} ${tech.lastName}`}
+                                 key={tech.id}
+                              >
+                                 {tech.firstName} {tech.lastName}
+                              </option>
+                           );
+                        })}
                   </select>
                </div>
             </div>
@@ -105,4 +113,8 @@ AddLogModal.propTypes = {
    addLog: PropTypes.func.isRequired,
 };
 
-export default connect(null, { addLog })(AddLogModal);
+const mapStateToProps = (state) => ({
+   techs: state.tech,
+});
+
+export default connect(mapStateToProps, { addLog })(AddLogModal);
